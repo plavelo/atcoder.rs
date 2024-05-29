@@ -16,9 +16,9 @@ use std::iter::FromIterator;
 
 #[fastout]
 fn main() {
-    input!{
-        h: usize, w: usize,
-        s: [Chars; h],
-        mut plan: [(usize, usize, usize); h]
+    input! {
+        k: i32,
+        x: i32,
     }
+    println!("{}", if 500 * k >= x { "Yes" } else { "No" })
 }
