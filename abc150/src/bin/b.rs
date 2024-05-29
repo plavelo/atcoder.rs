@@ -16,9 +16,9 @@ use std::iter::FromIterator;
 
 #[fastout]
 fn main() {
-    input!{
-        h: usize, w: usize,
-        s: [Chars; h],
-        mut plan: [(usize, usize, usize); h]
+    input! {
+        _: i32,
+        s: String,
     }
+    println!("{}", s.matches("ABC").count())
 }
