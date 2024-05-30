@@ -17,9 +17,7 @@ use std::iter::FromIterator;
 #[fastout]
 fn main() {
     input! {
-        h: i32,
-        w: i32,
-        s: String,
-        mut plan: [(i32, i32, i32); h]
+        c: Chars,
     }
+    println!("{}", char::from_u32(c[0] as u32 + 1).unwrap())
 }
